@@ -1,0 +1,397 @@
+body {
+    background: linear-gradient(to right,rgb(1, 80, 76),rgb(0, 51, 44));
+}
+
+:root {
+    --color-for-titles:rgb(202, 107, 43);
+}
+
+
+header {
+    display:flex;
+    position: fixed;
+    width: 100%;
+    height:60px;
+    align-items: center;
+    background:rgba(240, 240, 240, 0.01);
+    z-index:1000;
+}
+
+.header-scroll {
+    background:linear-gradient(to bottom,rgb(202, 107, 43),rgb(121, 60, 19));
+}
+
+
+.card-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+} 
+
+.banner-img {
+    position: absolute;
+    z-index:10;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.data-center {
+    width: 700px;
+    height: 350px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    z-index:100;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    gap:20px;
+    border-radius:8px;
+}
+
+
+.card-img {
+    width:250px;
+    height:250px;
+    border-radius:100%;
+}
+
+
+.card-banner__div-back {
+    width:300px;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+
+.box-filter {
+    position:absolute;
+    width:300px;
+    height:100px;
+    background-color:rgba(0, 0, 0, 0.479);
+    border-radius:10px;
+    filter: blur(2.8px)
+}
+
+.card-banner__div-p {
+    z-index:100;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:300px;
+    height: 30px;
+}
+
+.card__p {
+    z-index:10;
+    color:rgb(255, 255, 255);
+    font-size:20px;
+    font-weight:bold;
+}
+
+.card__p-2 {
+    z-index:20;
+    color:rgb(255, 255, 255);
+    font-size:20px;
+    font-weight:bold;
+}
+
+.card-banner__img {
+    width:30px;
+    height:30px;
+}
+
+.header__div {
+    display:flex;
+    align-items:center;
+    flex:2;
+    grid-gap:10px;  
+}
+
+.code-img {
+    font-size:20px;
+    color:rgb(1, 80, 76);
+    margin-left:15px;
+}
+
+.header__h1 {
+    color: rgb(1, 80, 76);
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+nav {
+    margin-right: 5px;
+    flex:1.2;
+}
+
+.nav__ul {
+    display:flex;
+    list-style: none;
+}
+
+.nav__li {
+    margin:0 8px;
+}
+
+.nav__a {
+  font-size:16px;
+  color:#000;
+}
+
+.nav__a:hover {
+    border-bottom:1px solid var(--color-for-titles);
+    color:rgba(240, 240, 240, .7)
+}
+
+.container-inicio {
+    display:grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 400px;
+    height:400px;
+    width:90%;
+    border-radius: 8px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.inicio__div {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-f {
+    grid-row: 1 /  2;
+    grid-column: 1 / 3 ;
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.inicio__div-redes {
+    display:flex;
+}
+
+.btn-git {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btn-git:hover > i , b {
+    color:rgba(50, 255, 199);
+}
+
+.btn-git b {
+    font-size:12px;
+}
+
+
+.btn-ig {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btn-ig b {
+    font-size:12px;
+}
+
+.github,.fa-instagram {
+    font-size:50px;
+    margin:0 15px;
+}
+
+.fa-instagram:hover {
+    color:rgba(50, 255, 199,.4);
+}
+
+.github:hover {
+    color:rgba(50, 255, 199,.4);
+}
+
+
+.inicio__div-parrafo {
+    display:flex;
+    flex-direction: column;
+    margin:40px;
+    height: 280px;
+    text-align:justify;
+    grid-gap:20px;
+}
+
+.inicio__div-parrafo div {
+    margin-top:25px;
+    text-align:center;
+}
+
+.inicio__h2 {
+    font-size:50px;
+    color:var(--color-for-titles);
+}
+
+.inicio__p {
+    flex:1;
+    color:rgba(240,240,240,.7);
+    grid-row: 2 / 3;
+    grid-column:2 / 3;
+    font-size:18px;
+
+}
+
+.container-proyectos {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin:5px auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.proyectos__h3 {
+    font-size:50px;
+    color:var(--color-for-titles);
+}
+
+.flex-proyectos {
+    display:flex;
+    flex-wrap: wrap;
+    margin:40px auto;
+    grid-gap:50px;
+    width:700px;
+    height: 300px;
+}
+
+.container-todo-list {
+    width:300px;
+    height:240px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin-left:10px;   
+}
+
+.todo-list__b {
+    color:var(--color-for-titles);
+    border-bottom:2px solid var(--color-for-titles);
+}
+
+.proyecto-todo-list {
+    margin:5px 20px;
+    width:330px;
+    height: 240px;
+    position: relative;
+    display:flex; 
+    overflow: hidden;
+    transition:transform 1s;
+}
+
+.proyecto__img {
+    width:100%;
+    height:100%;
+    border-radius:2px;
+    position:absolute;
+    z-index:1;
+    transition-property: filter;
+    transition-duration: .1s;
+}
+
+
+.container-info {
+    display: flex;
+    transform: translateY(240px);
+    grid-gap:10px;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    background:rgba(240, 240, 240, 0.068);
+    position: absolute;
+    z-index:10;
+    transition:transform .1s;
+}
+
+.animation-todo-list-info {
+    display: flex;
+    transform: translateY(0px);
+}
+
+.animation-todo-list-img {
+    filter:blur(.9px);
+}
+
+
+.proyecto-todo-list div a {
+    background: rgba(240, 240, 240,.2);
+    border-radius:10px;
+}
+
+.fa-globe {
+    font-size:18px;
+    margin-right: 5px;
+}
+
+.github-info {
+    margin-right:5px;
+}
+
+.cards-skills {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 90%;
+    margin:10px auto;
+}
+
+.skills__h3 {
+    font-size:50px;
+    color:var(--color-for-titles);
+}
+
+.skills__flex-container {
+    display:flex;
+    margin:30px 0px;
+}
+
+.skills__flex-container div {
+    margin:1px 20px;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+
+.skills__flex-container div img {
+    width:80px;
+    height:80px;
+}
+
+.skills__flex-container div b {
+    font-size:15px;
+}
+
+.skills__b-html {
+    color:rgba(228, 79, 38);
+}
+
+.skills__b-css {
+    color:rgba(10, 120, 240);
+}
+
+
+.skills__b-js {
+    color:rgba(255,255,10);
+}
